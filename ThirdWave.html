@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title >ThirdWaveCoffeeShop</title>
+    <style>
+        .box {
+          border: 3px solid #ccc; /* Border style */
+          border-color: black;/*border color*/
+          padding: 20px; /* Padding inside the box */
+          width: 1300px; /* Width of the box */
+          margin: 0 auto; /* Center the box horizontally */
+          background-color: grey;/*background color */
+          font-size: 20px;/*font size*/
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      .box_menu {
+
+          padding: 20px; /* Padding inside the box */
+          width: 1300px; /* Width of the box */
+          margin: 0 auto; /* Center the box horizontally */
+          background-color: lightgrey;/*background color */
+          font-size: 20px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+
+      .heading{
+        color: black;
+        text-align: center;
+    }
+    .subheading{
+        font-size: 45px;color: red;
+        font-family: monotype corsiva;
+    }
+
+    .subheading1{
+        color: darkblue;
+        text-align:center;
+        font-family: monotype corsiva;
+        font-size: 45px;
+    }
+    .container {
+        max-width: 500px;
+        margin: 50px; /* Adjust margin for positioning */
+        padding: 20px;
+        background-color:grey;
+        border-width: 10px;
+        border-color: black;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        color: #080238;
+        
+    }
+   
+    label {
+        font-weight: bold;
+        color: #080238;
+        font-size: 20px;
+    }
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+   
+    input[type="submit"] {
+        background-color:darkblue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+        margin: 0 auto;
+        
+
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .pstyle
+    {
+        padding: 20px;
+        width: 80%;
+        height: 50%;
+        margin: 20px;
+        background-color: grey;
+        font-size: 20px;"
+    }
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    h3 {
+        font-size: 2.2rem;
+        color: var(--main-color);
+        line-height: 1.8;
+    }
+    /* Styles for the dropdown menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+    .header
+    {
+    background-color: lightgrey;padding: 20px;display: flex;justify-content: space-between;align-items: center;
+    }
+</style>
+<body style="background: lightgrey;">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="box_menu header" >
+     <a href="#" class="logo" class="italic" style="color: #e00b24;margin-right: 5px;font-family:sans-serif;font-size: 65px;text-decoration: none;font-family: monotype corsiva;"><b>The Third Wave </b></a>
+     <a href="#home" style="color: darkblue;margin-right:5px;font-family: sans-serif;font-size: 20px;text-decoration: none;"><b>HOME</b></a>
+     <a href="#about"style="color: darkblue;margin-right: 5px;font-family: sans-serif;font-size: 20px;text-decoration: none;"><b>ABOUT</b></a>
+     <a href="#menu"style="color: darkblue;margin-right: 5px;font-family: sans-serif;font-size: 20px;text-decoration: none;"><b>MENU</b></a>
+     <a href="#review"style="color: darkblue;margin-right: 5px;font-family: sans-serif;font-size: 20px;text-decoration: none;"><b>TESTIMONY</b></a>
+     <a href="#contact"style="color: darkblue;margin-right: 5px;font-family: sans-serif;font-size: 20px;text-decoration: none;"><b>CONTACT US</b></a>
+     <a href="#book"><button  style=" display: inline-block;padding: 10px 20px;background-color: darkblue;color: white;text-align: center;
+     text-decoration: none border: none;border-radius: 5px;cursor: pointer;font-size: 16px;transition: background-color 0.3s;"><b>Book A Table</b></button></a>
+ </header>
+
+ <!-- HOME -->
+ <section class="home box_menu " id="home">
+    <h1 class="subheading1">--------* But first, coffee!!!! *--------</h1>
+    <img src="https://img.freepik.com/free-photo/top-view-tasty-espresso-served-cup-with-coffee_24972-2309.jpg?w=740&t=st=1707822889~exp=1707823489~hmac=17681c1cbf3720c5f4a08517e2878971b5a84cffb7aefaf8eb2f1d1f9b03d8ea"  alt="coffee image" style="width: 100%;height: 680px;">
+    <h2 class="subheading1">Sip, Savor, Repeat. Life Begins After Coffee</h2>
+    <div class="box" style="width: 1250px;">
+        <p >Indulge in the rich, aromatic embrace of coffee, where every sip becomes a journey through warmth and comfort. From the first tantalizing aroma that awakens the senses to the last lingering taste that dances on the palate, coffee is more than just a beverage; it's a companion through moments of reflection and celebration, a source of solace in the quiet hours, and a catalyst for connection among friends and strangers alike. With each cup, we embark on a voyage of discovery, exploring the depths of flavor and the intricacies of culture woven into every bean. So let us raise our mugs in salute to the humble coffee bean, for it fuels not just our bodies, but our souls, invigorating our spirits and enriching our lives with every delightful sip.</p></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h1 class="heading subheading" style="font-family:monotype corsiva" style="color: red;" ><b>--------*About Us*--------</b></h1>
+        <div>
+            <table class="box" >
+
+                <tr>
+                    <td> <img src="https://img.freepik.com/premium-photo/international-day-coffee-hearts-beverage_995828-1296.jpg?w=360" alt=""></td>
+                    <td ><h1 style="text-align:center;color: black;font-family: monotype corsiva;font-size:35px">Welcome to The Third Wave, where coffee isn't just a drink , it's an experience.</h1>
+                        <p style="
+                        padding: 20px;
+                        width: 80%;
+                        height: 50%;
+                        margin: 0 auto; 
+                        background-color: grey;font-size: 20px;">Nestled in the heart of Bangalore, we pride ourselves on being more than just another coffee shop. Inspired by the third wave coffee movement, we are dedicated to sourcing the finest beans from around the globe and meticulously roasting them to perfection.
+
+                        Our mission is simple: to elevate your coffee experience to new heights. Whether you're a connoisseur or a casual sipper, we invite you to embark on a journey of flavor and discovery with each cup.
+
+                        Step into our cozy, inviting space, where the aroma of freshly brewed coffee fills the air and the sound of steaming milk creates a symphony of indulgence. Our expert baristas are passionate about their craft, ensuring that every cup is brewed with precision and care.
+
+                        But we're more than just coffee. From our artisanal pastries to our hearty breakfast options, we offer a delectable selection of treats to complement your drink of choice.
+
+                        At The Third Wave, we believe that great coffee is more than just a beverage; it's a catalyst for connection, creativity, and community. 
+                    </p></td>
+                </tr>
+
+
+            </table>
+        </div>
+        <br><br>
+        <div class="content">
+
+            <table class="box box_menu2" >
+
+                <tr >
+                    <td ><img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/70abdfaa7459eef7b93ee18559c5310e.jpg" alt="" style="width: 400px;"></td>
+                    <h1 class="subheading1" >What Makes Our Coffee Special</h1>
+                    <td>
+
+                        <p class="pstyle box">
+                            At "The Third Wave," we take pride in offering an exceptional coffee experience that goes beyond the ordinary. Here's what makes our coffee truly special:-<br>
+
+                            1.Single-Origin estates Selection<br>
+                            2.Artisanal Roasting<br>
+                            3.Direct Trade Practices<br>
+                            4.Precision Brewing<br>
+                            Se5.asonal Offerings<br>
+                            6.Commitment to Sustainability<br>
+
+                        </p>
+
+                    </td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWwnqLhseiN3rfVj4PHPc4j7ySFGYfxbi3Q&s" alt="" style="width: 400px; height: 270px;" ></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+</section>
+<!-- MENU -->
+<section class="menu box_menu" id="menu">
+    <h1 class="heading subheading" style="font-family: monotype corsiva;"><b>--------*Menu*--------</b></h1>
+    <p style="font-size: 25px;text-align: center;">Savor the flavors of our culinary creations at our restaurant. Delight in our exquisite offerings crafted by talented chefs. Indulge in delectable dishes prepared with the finest ingredients. Our menu promises a symphony of flavors, from appetizers to desserts. Elevate your dining experience with us.</p>
+    <h3 class="heading subheading1" >Our Popular Choices</h3>
+    <table  class="box_menu">
+
+        <tr>
+            <td> <img src="https://coffeehero.com.au/cdn/shop/articles/758214849ae27a07c55af11f0f0f633b_2048x2048.jpg?v=1623281348" style="width: 600px;" alt=""></td>
+            <td ><h1 style="text-align:center;color: maroon;font-family: monotype corsiva;font-size:35px">Espresso</h1>
+                <p style="
+                padding: 20px;
+                width: 80%;
+                height: 50%;
+                margin: 0 auto; 
+                font-size: 20px;">
+
+
+                A concentrated coffee brewed by forcing hot water through finely-ground coffee beans. It's strong & rich in flavor,served in small shots.A hallmark of well-prepared espresso is the crema, a creamy layer that forms on top of the shot, adding to its rich texture. Typically served in small 1-ounce shots, espresso boasts an intense flavor profile with notes of caramel, chocolate, nuts, and fruit. Despite its robust taste, espresso contains less caffeine than drip coffee but still provides a significant energy boost. 
+
+
+
+            </p></td>
+        </tr>
+
+        <tr>
+            <td>
+
+                <h1 style="text-align:center;color: maroon;font-family: monotype corsiva;font-size:35px">Americano</h1>
+                <p style="
+                padding: 20px;
+                width: 80%;
+                height: 50%;
+                margin: 0 auto; 
+                font-size: 20px;"> Made by diluting espresso with hot water, resulting in a coffee with a similar strength to drip coffee but with a different flavor profile.This dilutes the espresso and creates a coffee beverage with a flavor profile similar to drip coffee but with the intensity of espresso. The ratio of espresso to water can be adjusted based on personal preference. Some enjoy it with just a single shot of espresso, while others prefer a double shot for a stronger flavor. Overall, the Americano is a simple yet satisfying coffee drink that can be customized to suit individual tastes.
+            </p>
+        </td>
+        <td ><img src="https://images.prismic.io/super-coffee/66770006-3fb5-4a25-8ad2-d52c18c74cb9_americano.jpg?q=85&w=1200" style="width: 600px;" alt=""></td>
+    </tr>
+    <tr>
+        <td> <img src="https://www.shutterstock.com/image-photo/cappuccino-coffee-beautiful-glass-on-600nw-2017631294.jpg" style="width: 600px;" alt=""></td>
+        <td ><h1 style="text-align:center;color: maroon;font-family: monotype corsiva;font-size:35px">Cappuccino</h1>
+            <p style="
+            padding: 20px;
+            width: 80%;
+            height: 50%;
+            margin: 0 auto;font-size: 20px;">
+
+
+            A classic Italian coffee drink consisting of equal parts espresso, steamed milk, and milk foam. It has a creamy texture and a strong coffee flavor.Brewed with precision, it offers a harmonious blend of rich espresso and creamy milk, topped with airy foam. Traditionally served in smaller cups, the cappuccino provides a comforting and indulgent experience, making it a favorite choice for coffee lovers around the world.
+
+
+
+        </p></td>
+    </tr>
+
+    <tr>
+        <td>
+
+            <h1 style="text-align:center;color: maroon;font-family: monotype corsiva;font-size:35px">Mocha</h1>
+            <p style="
+            padding: 20px;
+            width: 80%;
+            height: 50%;
+            margin: 0 auto; 
+            ackground-color: grey;font-size: 20px;"> A chocolate-flavored variant of a latte, made with espresso, steamed milk, and chocolate syrup. It's often topped with whipped cream.Made by adding chocolate syrup or cocoa powder to a shot of espresso, then topped with steamed milk and optionally whipped cream, the mocha offers a perfect balance of sweetness and bitterness. Whether enjoyed as a morning treat or an afternoon pick-me-up, the mocha provides a satisfying and decadent coffee experience for aficionados seeking a touch of indulgence.
+        </p>
+
+    </td>
+    <td ><img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png?quality=90&resize=556,505" style="width: 580px;height: 400px;" alt=""></td>
+    <td><button>More Menu</button></td>
+</tr>
+</table>
+</section>
+
+<!-- BOOK -->
+<section class="book box_menu " id="book">
+    <h1 class="heading subheading" ><b>--------*Reserve A Table*--------</b></h1>
+    <table >
+
+       <tr>
+        <td><div class="container" >
+            <h2 style="text-align: center;">Request Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Mobile No:</label>
+                <input type="text" id="mobile" name="mobile" required>
+
+                <label for="subject">Number Of Seats:</label>
+                <input type="text" id="seats" name="seats" required>
+                <div> <select style="width: 250px;padding: 10px;margin: 10px;">
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="option1">Indiranagar</option>
+                    <option value="option2">Alur</option>
+                    <option value="option3">CV Raman Nagar</option>
+                </select></div>
+
+                <br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </td>
+
+    <td><div>
+        <img src="https://www.tycoonstory.com/wp-content/uploads/2023/09/10-Things-To-Consider-When-Designing-A-Floor-Plan-For-A-Coffee-Shop-Tycoonstory.jpg" style="width: 700px;height: 480px;">
+    </div></td></tr>
+</table> 
+
+
+
+
+</section>
+
+<!-- customer review -->
+<section class="review box_menu" id="review">
+ <table style="width: 1290px">
+    <h1 class="heading subheading" ><b>--------*Testimony*--------</b></h1>
+    <p style="font-size: 25px;text-align: center;">
+        Every review is a testament to our dedication to customer satisfaction. See the impact of our products/services through the eyes of those who have experienced them firsthand   
+    </p>
+    
+
+    <tr>
+        <td class ="box" style="text-align:center;text-decoration: none;">
+            <img src="https://www.shutterstock.com/image-photo/young-beautiful-brunette-woman-drinking-260nw-1667903464.jpg" style="width: 250px;" alt="Espresso" >
+            <p style="font-size: 30px; color:darkblue;font-family: monotype corsiva;"><b>Kruthika Anand</b></p>
+            <p>Mocha is my guilty pleasure! The perfect balance of chocolate and espresso gives me the boost I need with a hint of sweetness. Can't start my day without it! </p>
+        </td>
+
+        <td class ="box" style="text-align:center;text-decoration: none;">
+            <img src="https://us.images.westend61.de/0001539897pw/happy-mid-adult-man-holding-coffee-cup-in-cafe-RCPF00895.jpg"style="width: 250px;height: 160px;"alt="">
+            <p style="font-size: 30px; color:darkblue;font-family: monotype corsiva;"><b>Kiran</b></p>
+            <span> Just had the cappuccino and it was fantastic! The velvety texture and strong espresso flavor were exactly what I needed to power through my afternoon slump. Will definitely be back for more!"</span>
+        </td>
+        <td class ="box" style="text-align:center;text-decoration: none;">
+            <img src="https://media.istockphoto.com/id/1326419180/photo/beautiful-woman-relaxing-and-drinking-hot-tea.jpg?s=612x612&w=0&k=20&c=qrSWG73ojw7pUftLvkQxL6maCWhfQVjuAba96d0vbEU=" style="width: 250px;"alt="">
+            <p style="font-size: 30px; color:darkblue;font-family: monotype corsiva;"><b>Gowri</b></p>
+            <span> Tried the Americano and it was fantastic! The strong, smooth flavor of the espresso shines through with every sip. A perfect choice for any coffee lover!</span>
+        </td>
+        <td class ="box" style="text-align:center;text-decoration: none;">
+            <img src="https://refsee.com/images/thumb/1LESFAVk0gmzvg9BIcFTUnGksQY9lS2QU.jpg"style="width: 250px;height: 160px;"alt="">
+            <p style="font-size: 30px; color:darkblue;font-family: monotype corsiva;"><b>Sidharth</b></p>
+            <span> Espresso shots are my daily ritual! The rich flavor and quick jolt of caffeine are the perfect way to start my day on the right foot. Always consistent and delicious!</span>
+
+        </td>
+
+    </tr>
+</table>
+</section>
+
+<!-- CONTACT US -->
+<section class="contact" id="contact">
+ <h1 class="heading subheading" ><b>--------*Contact Us*--------</b></h1>
+
+ <table class="box" >
+
+    <tr>
+        <td>
+            <h4 style="color: darkblue;"><u>Visit Us At</u></h4>
+            2116, CMR Main Rd, HRBR Layout 2nd Block,<br> HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043
+
+            <br>
+            <h4 style="color: darkblue;"><u>Call to find out more:</u></h4>
+            9965845125
+        
+          <h4 style="color: darkblue;"><u>Store Timings:VISIT NOW</u></h4>
+          <figure class="table"><table><tbody><tr><td>Sunday</td><td>8:00 AM - 1:00 AM&nbsp;</td></tr><tr><td>Monday</td><td>8:00 AM - 1:00 AM&nbsp;</td></tr><tr><td>Tuesday</td><td>8:00 AM - 1:00 AM&nbsp;</td></tr><tr><td>Wednesday</td><td>8:00 AM - 1:00 AM&nbsp;</td></tr><tr><td>Thursday</td><td>8:00 AM - 1:00 AM&nbsp;</td></tr><tr><td>Friday</td><td>8:00 AM - 1:00 AM&nbsp;</td></tr><tr><td>Saturday</td><td>8:00 AM - 1:00 AM&nbsp;</td></tr></tbody></table></figure>
+        
+        </h1>
+    </td>
+    <td ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.2491528875676!2d77.58133367327372!3d12.89169418741634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15207ae6ba59%3A0xfe6096923a0de9ce!2sThird%20Wave%20Coffee!5e0!3m2!1sen!2sin!4v1708001737306!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <br><br>
+        <table> <tr>
+            <td><div style="text-align:center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/150px-Instagram_logo_2022.svg.png" alt="Image Description" style="width: 40px;"><br>
+                <a href="https://www.instagram.com/thethirdwave.th?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="style="text-align: center;">Instagram</a>
+            </div></td><td> 
+                <div style="text-align:center;">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_640.png" style="width: 40px;"><br>
+                    <a href="https://www.facebook.com/thirdwavecoffeeindia/"style="text-align: center;">Facebook</a>
+                </div></td>
+                <td>
+                    <div style="text-align:center;">
+                        <img src="https://cdn.pixabay.com/photo/2015/09/09/14/02/earth-931552_640.jpg" style="width: 40px;"><br>
+                        <a href="https://www.facebook.com/thirdwavecoffeeindia/"style="text-align: center;">Website</a>
+                    </div>
+                </td>
+            </tr></table></td>
+
+
+
+
+
+
+        </tr>
+
+    </table>
+
+
+</section>
+
+ 
+    
+       
+
+</body>
+</html>
+
+
